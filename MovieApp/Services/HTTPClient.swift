@@ -17,7 +17,8 @@ class HTTPClient {
     
     func getMoviesBy(search: String, completion: @escaping (Result<[Movie]?, NetworkError>) -> Void) {
         
-        guard let url = URL(string: "https://www.omdbapi.com/?s=\(search)&apikey=\(Constants.API_KEY)") else {
+        guard let url = URL(string: "https://www.omdbapi.com/?s=\(search)&apikey=\(Constants.API_KEY)")
+        else {
             return completion(.failure(.badURL))
         }
         
@@ -26,11 +27,12 @@ class HTTPClient {
             guard let data = data, error == nil else {
                 return completion(.failure(.noData))
             }
-            
+         
         // Once we have the data and unwrapped it. we have to decode the data
             guard let movieResponse = try? JSONDecoder().decode(MovieResponse.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
+        
         // If all worked well
             completion(.success(movieResponse.movies))
             

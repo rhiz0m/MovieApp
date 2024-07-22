@@ -12,10 +12,17 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             Text("Movie App!")
+                .onAppear {
+                    HTTPClient().getMoviesBy(search: "Lord Of The Rings") { result in
+                        switch result {
+                        case .success(let movies):
+                            print(movies)
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+                }
         }
         .padding()
     }
