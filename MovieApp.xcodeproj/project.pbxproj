@@ -16,6 +16,7 @@
 		FE37CD712C47FFA9002A4AC6 /* MovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CD702C47FFA9002A4AC6 /* MovieAppUITestsLaunchTests.swift */; };
 		FE37CD7E2C48028F002A4AC6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FE37CD7D2C48028F002A4AC6 /* .gitignore */; };
 		FE37CD812C48033F002A4AC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CD802C48033F002A4AC6 /* Constants.swift */; };
+		FE60EEFD2C4E91AC00E58C6F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60EEFC2C4E91AC00E58C6F /* URL+Extensions.swift */; };
 		FE90DA2A2C4935F10029113C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90DA292C4935F10029113C /* ImageLoader.swift */; };
 		FE90DA2C2C4937F70029113C /* UrlImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90DA2B2C4937F70029113C /* UrlImage.swift */; };
 		FE90DA302C493ACA0029113C /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90DA2F2C493ACA0029113C /* Ratings.swift */; };
@@ -53,6 +54,7 @@
 		FE37CD702C47FFA9002A4AC6 /* MovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FE37CD7D2C48028F002A4AC6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FE37CD802C48033F002A4AC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE60EEFC2C4E91AC00E58C6F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		FE90DA292C4935F10029113C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FE90DA2B2C4937F70029113C /* UrlImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImage.swift; sourceTree = "<group>"; };
 		FE90DA2F2C493ACA0029113C /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		FE90DA272C49356D0029113C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE60EEFC2C4E91AC00E58C6F /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				FE37CD562C47FFA6002A4AC6 /* ContentView.swift in Sources */,
 				FE90DA342C4968A60029113C /* HTTPClient.swift in Sources */,
 				FE37CD542C47FFA6002A4AC6 /* MovieAppApp.swift in Sources */,
+				FE60EEFD2C4E91AC00E58C6F /* URL+Extensions.swift in Sources */,
 				FE90DA2C2C4937F70029113C /* UrlImage.swift in Sources */,
 				FE90DA2A2C4935F10029113C /* ImageLoader.swift in Sources */,
 				FE90DA302C493ACA0029113C /* Ratings.swift in Sources */,
